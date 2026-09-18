@@ -7,14 +7,15 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN"   # 界面文案切中文（_data/ui-text.yml 内已内置 zh / zh-CN 语言包）
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "谭镇"
 title_separator          : "-"
 name                     : &name "谭镇"
 description              : &description "桂林电子科技大学博士生"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : https://tantan123456.github.io # 你的站点根地址。前提：仓库已改名为 tantan123456.github.io
+                                                          # 若保留 Allen-Tan.github.io 这个名字，这里改为 https://tantan123456.github.io/Allen-Tan.github.io
+                                                          # 并把下面 baseurl 改成 "/Allen-Tan.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "tantan123456/Allen-Tan.github.io"
 
@@ -23,14 +24,14 @@ repository               : "tantan123456/Allen-Tan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "profile.png"   # 对应 images/profile.png，用同名文件覆盖即可换头像
+  name             : "谭镇"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "桂林电子科技大学 博士研究生"   # 侧边栏一句话简介，建议换成你自己的表述
+  location         : "桂林，中国"
+  employer         : "桂林电子科技大学"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "你的邮箱@example.com"   # TODO 换成真实邮箱
 
   # Academic websites
   academia         : # URL
@@ -38,10 +39,10 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : # 有 ORCID 就填 "https://orcid.org/0000-0000-0000-0000"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
@@ -51,13 +52,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "tantan123456"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -83,13 +84,14 @@ author:
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
+# 注意：只改 title（页面上显示的标题），不要改 books / manuscripts / conferences 这几个键名
 publication_category:
   books:
-    title: 'Books'
+    title: '专著'
   manuscripts:
-    title: 'Journal Articles'    
+    title: '期刊论文'    
   conferences:
-    title: 'Conference Papers'
+    title: '会议论文'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

@@ -1,18 +1,9 @@
-# Authors
+# 多作者支持：文章 front matter 里写 author: 谭镇 就会匹配到这里的资料
+# 站点侧边栏的作者信息在 _config.yml 的 author 段，不放这里
 
-Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+谭镇:
+  name        : "谭镇"
+  uri         : "https://tantan123456.github.io/"
+  email       : "你的邮箱@example.com"
+  bio         : "桂林电子科技大学 博士研究生"
+  avatar      : "profile.png"
